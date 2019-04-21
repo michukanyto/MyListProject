@@ -8,7 +8,13 @@ public class Main {
 		System.out.println(mylist.toString());
 		System.out.println("This list is empty => " + mylist.isEmpty());//Testing if list is empty or not
 		MyList mylist1 = new MyList();
-		System.out.println("This list is empty => " + mylist1.isEmpty());
+		System.out.println("This list is empty => " + mylist1.isEmpty());//Testing if list is empty or not
+		
+		
+		mylist.toArray();//The new Array of Objects
+		
+		MyList copyList = mylist.copy();
+		System.out.println(mylist.toString() + "is equal to " + copyList.toString());
 
 	}
 

@@ -1,5 +1,7 @@
 package list;
 
+import java.util.Arrays;
+
 public class MyList<T> {
 	T data;
 	MyList<T> tail;
@@ -42,7 +44,21 @@ public class MyList<T> {
 	}
 	
 	
+	public Object[] toArray() {
+		Object[] array = new Object[0];
+		MyList<T> list = this;
+		if (!list.isEmpty()) {
+			array = Arrays.copyOf(array, array.length+1);
+			System.out.println("this is the new Array of Objects => " + array);
+		}
+		return array;
+	}
 	
 	
+	public MyList<T> copy(){
+		MyList<T> list = this;
+		return list;
+		
+	}
 
 }
